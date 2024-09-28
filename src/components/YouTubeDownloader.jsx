@@ -46,7 +46,6 @@ const YouTubeDownloader = () => {
       // Create a temporary anchor element to trigger the download
       const link = document.createElement("a");
       link.href = video_url;
-      link.setAttribute("target", "_blank");
       link.setAttribute("download", video_title);
       link.style.display = 'none';
       document.body.appendChild(link);
